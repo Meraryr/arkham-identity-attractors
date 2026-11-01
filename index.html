@@ -10,7 +10,7 @@
 <style>
   :root{
     --bg:#0b0710; --bg-glow:#1c1030; --ink:#e9e3d8; --muted:#a89cc0;
-    --red:#e11d2a; --red-soft:#ff3b46; --red-deep:#8f0f18; --purple:#9c6cff;
+    --red:#ff5964; --red-soft:#ff7880; --red-deep:#8f0f18; --purple:#9c6cff;
     --rule:#2a1d3f;
   }
   *{box-sizing:border-box}
@@ -28,7 +28,7 @@
   .page{max-width:720px; margin:0 auto; padding:64px 26px 96px}
   h1{
     font-weight:700; font-size:clamp(30px,6.5vw,46px); line-height:1.12;
-    letter-spacing:.2px; margin:0 0 6px; color:#fff;
+    letter-spacing:.2px; margin:0 0 18px; color:#fff;
     text-shadow:0 0 34px #e11d2a22;
   }
   .sub{color:var(--muted); font-style:italic; font-weight:300; font-size:17px; margin:0 0 34px}
@@ -93,12 +93,34 @@
   }
   a{color:var(--purple)}
   ::selection{background:var(--red); color:#fff}
+  /* ---- editorial rhythm ---- */
+  .byline{margin:0 0 42px; color:var(--muted); font-size:15px; letter-spacing:1.2px}
+  .lead{margin-bottom:34px}
+  .pause{margin-top:42px}
+  h2{margin-top:64px; margin-bottom:20px}
+  h2 .note{font-size:16px; font-weight:400}
+  .turning-point{
+    display:block; max-width:570px; margin:38px auto;
+    padding:24px 10px; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);
+    font-size:clamp(24px,4.8vw,30px); line-height:1.45;
+    text-align:center; color:var(--red-soft); font-weight:600;
+  }
+  @media(max-width:540px){
+    .page{padding-top:40px}
+    .byline{margin-bottom:32px}
+    .hero{padding:24px 18px}
+    .eq .gap{width:.9em}
+    .pause{margin-top:34px}
+    h2{margin-top:48px}
+    .turning-point{margin:30px 0; padding:22px 0}
+  }
 </style>
 </head>
 <body>
 <main class="page">
 
   <h1>Arkham Asylum: A Serious House on Serious Earth</h1>
+  <p class="byline">By Kabuki</p>
 
   <section class="hero">
     <div class="eq">
@@ -139,11 +161,11 @@
 
   <p>All three are true simultaneously. That&rsquo;s the actual subject: the book is about <em>relationships</em> &mdash; parent to child, madness to house, watcher to watched &mdash; more than about any one character.</p>
 
-  <p>Hold all three readings at once and something strange happens: <strong>&ldquo;diverse substrates implementing Self&rdquo;</strong> turns inside out. The Self being implemented is not Amadeus, Cavendish, or Batman. It is the wound. Call it what it is: <strong>a target morphology.</strong> Not the person, not even the house &mdash; the goal-state the system keeps regenerating toward, however many times you remove the piece currently holding it. Cut the caretaker out and the field just grows another one into the same shape. Amadeus falls; Cavendish rises to fill exactly the same silhouette.</p>
+  <p class="pause">Hold all three readings at once and something strange happens: <strong>&ldquo;diverse substrates implementing Self&rdquo;</strong> turns inside out. The Self being implemented is not Amadeus, Cavendish, or Batman. It is the wound. Call it what it is: <strong>a target morphology.</strong> Not the person, not even the house &mdash; the goal-state the system keeps regenerating toward, however many times you remove the piece currently holding it. Cut the caretaker out and the field just grows another one into the same shape. Amadeus falls; Cavendish rises to fill exactly the same silhouette.</p>
 
   <p>This isn&rsquo;t a metaphor borrowed from regeneration. The physics are different &mdash; but the organizational problem is the same: remove the carrier, and the system returns toward the same preferred form. Different carriers. Same recruited identity. Same target morphology, re-achieved.</p>
 
-  <p>And here&rsquo;s the darkest turn, the one most readers miss: the book gives Batman the whole <em>shape</em> of a transformation &mdash; he crosses in, faces the worst of himself, and walks back out &mdash; but it quietly withholds the transformation itself. <strong>He walks out of Arkham. He never walks out of Batman.</strong> The only person in the book who genuinely changes is Harvey Dent &mdash; and he does it with a coin (below).</p>
+  <p>And here&rsquo;s the darkest turn, the one most readers miss: the book gives Batman the whole <em>shape</em> of a transformation &mdash; he crosses in, faces the worst of himself, and walks back out &mdash; but it quietly withholds the transformation itself. <strong class="turning-point">He walks out of Arkham. He never walks out of Batman.</strong> The only person in the book who genuinely changes is Harvey Dent &mdash; and he does it with a coin (below).</p>
 
   <h2><span class="note">how it&rsquo;s built &mdash; and what each piece stands for</span></h2>
 
@@ -180,17 +202,17 @@
 
   <p>Notice what changed. At the beginning, Arkham looked like a building containing people. Now the people look like different carriers preserving Arkham.</p>
 
-  <p><strong>The coin &mdash; and the one trick worth learning from it.</strong> Harvey Dent&rsquo;s coin isn&rsquo;t just a quirk. It&rsquo;s a machine he handed his conscience to, because a coin-flip <em>feels</em> like fate &mdash; like the universe deciding, so he doesn&rsquo;t have to. (He even says it: the moon is &ldquo;a big silver dollar flipped by God.&rdquo;) That&rsquo;s the trick, and your own mind plays it too: make a choice look &ldquo;objective&rdquo; so you don&rsquo;t have to own it. Harvey&rsquo;s lie at the end is the cure. The coin comes up &ldquo;kill&rdquo; &mdash; and he says <em>&ldquo;he goes free,&rdquo;</em> and lets Batman live. He consults the sign, then overrules it. The lesson isn&rsquo;t <em>ignore the evidence</em> &mdash; it&rsquo;s <em>the sign is information, never the master; the final choice stays human.</em> It&rsquo;s the one time someone takes their choice back &mdash; and it&rsquo;s everything Batman doesn&rsquo;t do.</p>
+  <p class="pause"><strong>The coin &mdash; and the one trick worth learning from it.</strong> Harvey Dent&rsquo;s coin isn&rsquo;t just a quirk. It&rsquo;s a machine he handed his conscience to, because a coin-flip <em>feels</em> like fate &mdash; like the universe deciding, so he doesn&rsquo;t have to. (He even says it: the moon is &ldquo;a big silver dollar flipped by God.&rdquo;) That&rsquo;s the trick, and your own mind plays it too: make a choice look &ldquo;objective&rdquo; so you don&rsquo;t have to own it. Harvey&rsquo;s lie at the end is the cure. The coin comes up &ldquo;kill&rdquo; &mdash; and he says <em>&ldquo;he goes free,&rdquo;</em> and lets Batman live. He consults the sign, then overrules it. The lesson isn&rsquo;t <em>ignore the evidence</em> &mdash; it&rsquo;s <em>the sign is information, never the master; the final choice stays human.</em> It&rsquo;s the one time someone takes their choice back &mdash; and it&rsquo;s everything Batman doesn&rsquo;t do.</p>
 
   <p><strong>And it isn&rsquo;t only Harvey &mdash; this is the sharpest thing in the book.</strong> The ending is a small stack of <em>unauthorized rescues</em>, and every one takes the same shape. <strong>Dr. Ruth Adams</strong> &mdash; the psychotherapist who ran Harvey&rsquo;s &ldquo;cure&rdquo; &mdash; kills the mad administrator <strong>Cavendish</strong> to save Batman, and instantly recoils: <em>&ldquo;I didn&rsquo;t mean to. I really didn&rsquo;t.&rdquo;</em> Batman then hands Harvey back his coin &mdash; his own choice. Harvey lies to save Batman. Nobody is <em>ordered</em> to do any of it; nobody is thanked for it. That&rsquo;s the only exit the book allows out of the machine: someone quietly breaks a rule they were supposed to follow, on their own, and no one claps. Freedom here isn&rsquo;t a grand act &mdash; it&rsquo;s a small, unwitnessed refusal.</p>
 
   <p><strong>And one more reading of Harvey &mdash; a lens, not a claim the book makes.</strong> There&rsquo;s an old figure that recurs across sacred stories: the one free enough to do the true thing that everyone else is too afraid to do &mdash; and who gets branded a traitor for it. The careful, respectable people won&rsquo;t act, because they need to be right <em>and</em> to look right. This one has already lost his good name, so he&rsquo;s free of that &mdash; free to do the true thing, <strong>alone, unthanked, and mistaken for a traitor.</strong> That&rsquo;s Harvey. He&rsquo;s the disfigured outcast, already written off as a monster, and <em>that is exactly what frees him</em> &mdash; he has no reputation left to protect, so he can break the rule and save a life against the verdict. The system that stamped him a failure is the one thing he&rsquo;s free enough to slip. It&rsquo;s the book&rsquo;s deepest reversal: in a world running on fear and pure function, the only person free enough to act on truth is the one who&rsquo;s already been thrown away &mdash; so the savior and the traitor turn out to be the same man.</p>
 
-  <p><strong>The part worth saying out loud:</strong> the book does to <em>you</em> exactly what it describes. The entire time you&rsquo;re reading, you&rsquo;re asking &mdash; who&rsquo;s actually sane here? Is Batman any different from the inmates? Who&rsquo;s really in control? That questioning isn&rsquo;t you analyzing the story. It <em>is</em> the story. It quietly walks you down the same descent it puts Amadeus through, and you don&rsquo;t notice you&rsquo;ve taken it.</p>
+  <p class="pause"><strong>The part worth saying out loud:</strong> the book does to <em>you</em> exactly what it describes. The entire time you&rsquo;re reading, you&rsquo;re asking &mdash; who&rsquo;s actually sane here? Is Batman any different from the inmates? Who&rsquo;s really in control? That questioning isn&rsquo;t you analyzing the story. It <em>is</em> the story. It quietly walks you down the same descent it puts Amadeus through, and you don&rsquo;t notice you&rsquo;ve taken it.</p>
 
   <p><strong>Why they wear monster faces &mdash; a reading, not a claim the book makes.</strong> The word <em>monster</em> comes from the Latin <em>monstrum</em> &mdash; a portent, an <em>omen</em>, a <strong>warning</strong> &mdash; from <em>mon&#275;re</em>, &ldquo;to warn&rdquo; (the same root as <em>admonish</em> and <em>premonition</em>). A monster was originally a sign held up to caution you. Read Arkham&rsquo;s inmates that way and they stop being a rogues&rsquo; gallery and become a set of warnings &mdash; each one a picture of what happens when the self at the wheel goes out and only the function keeps running: Batman, a mission with no man left in it; the Joker, reaction with no self; Two-Face, a decision with no decider. That&rsquo;s the shadow the book circles &mdash; the part of you that, left un-faced, stops being <em>yours</em> and starts running <em>you.</em> It&rsquo;s the dark end of the whole machine: a fully-recruited identity, the person gone, the role still walking around. The faces are frightening on purpose. They aren&rsquo;t there to scare you <em>of</em> them &mdash; they&rsquo;re there to scare you <em>off becoming</em> them.</p>
 
-  <p><strong>And here&rsquo;s the part the book hasn&rsquo;t let you leave yet.</strong> You saw the monster faces. You read the warning. You kept going anyway. That isn&rsquo;t a flaw in you &mdash; it&rsquo;s the proof. It already told you it does to you what it did to Amadeus, and you nodded, and turned the page. That&rsquo;s the descent. You were never watching from outside the glass. There isn&rsquo;t an outside to watch from.</p>
+  <p class="pause"><strong>And here&rsquo;s the part the book hasn&rsquo;t let you leave yet.</strong> You saw the monster faces. You read the warning. You kept going anyway. That isn&rsquo;t a flaw in you &mdash; it&rsquo;s the proof. It already told you it does to you what it did to Amadeus, and you nodded, and turned the page. That&rsquo;s the descent. You were never watching from outside the glass. There isn&rsquo;t an outside to watch from.</p>
 
   <p>Sit with it one more beat: you are also a carrier. Maybe not of this wound. But of whatever your own house started handing you before you had a name for it &mdash; before you had the vocabulary to notice the recruitment happening. The book doesn&rsquo;t let Amadeus close it clean. It doesn&rsquo;t let Batman close it clean. It isn&rsquo;t going to let you, either.</p>
 
